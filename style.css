@@ -759,3 +759,8 @@ textarea:focus {
   z-index: 3;
   pointer-events: auto;
 }
+.inquiry-button {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
