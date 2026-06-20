@@ -21,3 +21,52 @@ customForm.addEventListener("submit", (event) => {
   event.preventDefault();
   alert("Thank you. Your custom order request layout is ready to connect to a form service.");
 });
+const lightboxImages = document.querySelectorAll('.lightbox-img');
+
+let currentImageIndex = 0;
+
+const overlay = document.createElement('div');
+overlay.className = 'lightbox-overlay';
+overlay.innerHTML = `
+  <span class="lightbox-close">&times;</span>
+  <img src="" alt="Expanded artwork">
+  <div class="lightbox-nav">
+    <button id="prevImage">Previous</button>
+    <button id="nextImage">Next</button>
+  </div>
+`;
+
+document.body.appendChild(overlay);
+
+const overlayImg = overlay.querySelector('img');
+const closeBtn = overlay.querySelector('.lightbox-close');
+const prevBtn = overlay.querySelector('#prevImage');
+const nextBtn = overlay.querySelector('#nextImage');
+
+lightboxImages.forEach((img, index) => {
+  img.addEventListener('click', () => {
+    currentImageIndex = index;
+    overlayImg.src = img.src;
+    overlay.style.display = 'flex';
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  overlay.style.display = 'none';
+});
+
+prevBtn.addEventListener('click', () => {
+  currentImageIndex = (currentImageIndex - 1 + lightboxImages.length) % lightboxImages.length;
+  overlayImg.src = lightboxImages[currentImageIndex].src;
+});
+
+nextBtn.addEventListener('click', () => {
+  currentImageIndex = (currentImageIndex + 1) % lightboxImages.length;
+  overlayImg.src = lightboxImages[currentImageIndex].src;
+});
+
+overlay.addEventListener('click', (e) => {
+  if (e.target === overlay) {
+    overlay.style.display = 'none';
+  }
+});
