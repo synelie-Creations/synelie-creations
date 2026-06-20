@@ -654,3 +654,14 @@ textarea:focus {
     object-fit: cover;
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
+.site-logo {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
