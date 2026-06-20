@@ -672,3 +672,13 @@ textarea:focus {
   display: block;
   border-radius: 4px;
 }
+.gallery-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
