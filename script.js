@@ -19,8 +19,7 @@ navLinks.forEach((link) => {
 
 customForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  alert("Thank you! Your request has been prepared. Your email app will now open.");
-
+ 
 window.location.href = "mailto:infosyneliecreations@gmail.com?subject=Custom Order Request";
 });
 const lightboxImages = document.querySelectorAll('.lightbox-img');
