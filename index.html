@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synélie Créations | Handmade Resin Art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Synelie Creations homepage">
+        <span class="brand-mark">SC</span>
+        <span class="brand-text">Synélie Créations</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">Artist</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#custom">Custom Orders</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-pad">
+        <div class="hero-copy">
+          <p class="eyebrow">Handmade Resin Art | Ottawa, Canada</p>
+          <h1>Synélie Créations</h1>
+          <p class="hero-tagline">
+            Elegant resin artwork and keepsakes shaped by color, light, and
+            refined handmade detail.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#gallery">View Gallery</a>
+            <a class="button button-secondary" href="#custom">Request a Custom Order</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Abstract resin artwork placeholder">
+          <div class="art-frame">
+            <div class="resin-orbit orbit-one"></div>
+            <div class="resin-orbit orbit-two"></div>
+            <div class="gold-vein vein-one"></div>
+            <div class="gold-vein vein-two"></div>
+            <p>Featured Artwork</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-pad" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About the Artist</p>
+          <h2>Created by Carla Synelie Paultre</h2>
+        </div>
+        <div class="about-grid">
+          <div class="portrait-placeholder" aria-label="Artist portrait placeholder">
+            <span>Artist Portrait</span>
+          </div>
+          <div class="about-copy">
+            <p>
+              Synélie Créations is the resin art studio of Carla Synélie Paultre,
+              where expressive color palettes meet a calm, gallery-inspired
+              finish. Each handmade piece is designed to feel personal,
+              collectible, and quietly luxurious.
+            </p>
+            <p>
+              From wall art and decorative trays to custom keepsakes, Carla's
+              work celebrates movement, shine, and the beauty of one-of-a-kind
+              surfaces.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section-pad" id="gallery">
+        <div class="section-heading centered">
+          <p class="eyebrow">Gallery</p>
+          <h2>Signature Resin Collections</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <div class="image-placeholder wall-art"></div>
+            <div>
+              <h3>Resin Wall Art</h3>
+              <p>Statement panels with layered color, gloss, and metallic detail.</p>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <div class="image-placeholder trays"></div>
+            <div>
+              <h3>Decorative Trays</h3>
+              <p>Functional art pieces for styling consoles, vanities, and tables.</p>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <div class="image-placeholder dominoes"></div>
+            <div>
+              <h3>Domino Sets</h3>
+              <p>Polished game sets with custom color blends and luxe accents.</p>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <div class="image-placeholder keychains"></div>
+            <div>
+              <h3>Keychains</h3>
+              <p>Small handmade keepsakes designed for gifting and everyday beauty.</p>
+            </div>
+          </article>
+
+          <article class="gallery-card featured-card">
+            <div class="image-placeholder custom-pieces"></div>
+            <div>
+              <h3>Custom Pieces</h3>
+              <p>Personalized resin designs for meaningful gifts, events, and interiors.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="custom section-pad" id="custom">
+        <div class="section-heading">
+          <p class="eyebrow">Commission Inquiry</p>
+          <h2>Request a Custom Order</h2>
+        </div>
+
+        <form class="custom-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" placeholder="Your phone number" />
+          </label>
+          <label>
+            Preferred Colors
+            <input type="text" name="colors" placeholder="Emerald, ivory, gold..." />
+          </label>
+          <label>
+            Size
+            <input type="text" name="size" placeholder="Approximate dimensions" />
+          </label>
+          <label>
+            Budget
+            <input type="text" name="budget" placeholder="Estimated budget" />
+          </label>
+          <label class="full-field">
+            Message
+            <textarea name="message" rows="6" placeholder="Tell me about the piece you have in mind"></textarea>
+          </label>
+          <button class="button button-primary form-button" type="submit">Send Request</button>
+        </form>
+      </section>
+
+      <section class="contact section-pad" id="contact">
+        <div class="section-heading centered">
+          <p class="eyebrow">Contact</p>
+          <h2>Begin a Conversation</h2>
+        </div>
+
+        <div class="contact-list">
+          <a href="mailto:hello@syneliecreations.com">
+            <span>Email</span>
+            hello@syneliecreations.com
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+            <span>Instagram</span>
+            @syneliecreations
+          </a>
+          <p>
+            <span>Location</span>
+            Ottawa, Canada
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Synélie Créations. Handmade resin art by Carla Synélie Paultre.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
