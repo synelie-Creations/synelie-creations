@@ -71,3 +71,8 @@ overlay.addEventListener('click', (e) => {
     overlay.style.display = 'none';
   }
 });
+document.querySelectorAll('.inquiry-button').forEach(button => {
+  button.addEventListener('click', function(event) {
+    event.stopPropagation();
+  });
+});
