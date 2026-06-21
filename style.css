@@ -856,3 +856,27 @@ textarea:focus {
   font-weight: bold;
   cursor: pointer;
 }
+.image-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.9);
+  z-index: 99999;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 10px;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
