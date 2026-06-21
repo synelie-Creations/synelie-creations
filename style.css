@@ -764,19 +764,27 @@ textarea:focus {
   z-index: 10;
   pointer-events: auto;
 }
-.artwork-card {
+..artwork-card {
+    display: flex;
+    gap: 50px;
+    align-items: center;
     background: white;
-    border-radius: 8px;
-    overflow: hidden;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 50px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    margin-bottom: 40px;
+}
+
+.artwork-info {
+    flex: 1;
 }
 
 .artwork-card img {
-    width: 100%;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     display: block;
+    border-radius: 8px;
 }
 
 .artwork-info {
@@ -786,7 +794,8 @@ textarea:focus {
 .artwork-info h3 {
     margin-top: 0;
     color: #0f4d43;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: "Cormorant Garamond", serif;
 }
 
 .artwork-info p {
