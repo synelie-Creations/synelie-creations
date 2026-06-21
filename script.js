@@ -71,3 +71,23 @@ document.querySelectorAll('.inquiry-button').forEach(button => {
     event.stopPropagation();
   });
 });
+const lightboxImages = document.querySelectorAll('.lightbox-img');
+
+const overlay = document.createElement('div');
+overlay.className = 'lightbox-overlay lightbox-hidden';
+
+const largeImage = document.createElement('img');
+
+overlay.appendChild(largeImage);
+document.body.appendChild(overlay);
+
+lightboxImages.forEach(img => {
+    img.addEventListener('click', () => {
+        largeImage.src = img.src;
+        overlay.classList.remove('lightbox-hidden');
+    });
+});
+
+overlay.addEventListener('click', () => {
+    overlay.classList.add('lightbox-hidden');
+});
