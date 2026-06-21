@@ -766,10 +766,10 @@ textarea:focus {
 }
 ..artwork-card {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
     background: white;
-    padding: 40px;
+    padding: 25px;
     border-radius: 12px;
     margin-bottom: 50px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
@@ -780,10 +780,9 @@ textarea:focus {
 }
 
 .artwork-card img {
-    width: 400px;
-    height: 400px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    display: block;
     border-radius: 8px;
 }
 
