@@ -17,11 +17,6 @@ navLinks.forEach((link) => {
   });
 });
 
-customForm.addEventListener("submit", (event) => {
-  event.preventDefault();
- 
-window.location.href = "mailto:infosyneliecreations@gmail.com?subject=Custom Order Request";
-});
 const lightboxImages = document.querySelectorAll('.lightbox-img');
 
 let currentImageIndex = 0;
