@@ -130,37 +130,45 @@
           <h2>Request a Custom Order</h2>
         </div>
 
-        <form class="custom-form" action="https://formspree.io/f/xvzjpkgw" method="POST">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" />
-          </label>
-          <label>
-            Phone
-            <input type="tel" name="phone" placeholder="Your phone number" />
-          </label>
-          <label>
-            Preferred Colors
-            <input type="text" name="colors" placeholder="Emerald, ivory, gold..." />
-          </label>
-          <label>
-            Size
-            <input type="text" name="size" placeholder="Approximate dimensions" />
-          </label>
-          <label>
-            Budget
-            <input type="text" name="budget" placeholder="Estimated budget" />
-          </label>
-          <label class="full-field">
-            Message
-            <textarea name="message" rows="6" placeholder="Tell me about the piece you have in mind"></textarea>
-          </label>
-          <button class="button button-primary form-button" type="submit">Send Request</button>
         </form>
+  <form class="custom-form" action="https://formspree.io/f/xvzjpkgw" method="POST">
+  <label>
+    Name
+    <input type="text" name="name" placeholder="Your name" required>
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" placeholder="you@example.com" required>
+  </label>
+
+  <label>
+    Phone
+    <input type="tel" name="phone" placeholder="Your phone number">
+  </label>
+
+  <label>
+    Preferred Colors
+    <input type="text" name="colors" placeholder="Emerald, ivory, gold...">
+  </label>
+
+  <label>
+    Size
+    <input type="text" name="size" placeholder="Approximate dimensions">
+  </label>
+
+  <label>
+    Budget
+    <input type="text" name="budget" placeholder="Estimated budget">
+  </label>
+
+  <label class="full-field">
+    Message
+    <textarea name="message" rows="6" placeholder="Tell me about the piece you have in mind" required></textarea>
+  </label>
+
+  <button class="button button-primary form-button" type="submit">Send Request</button>
+</form>
       </section>
 
       <section class="contact section-pad" id="contact">
