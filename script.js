@@ -71,23 +71,27 @@ document.querySelectorAll('.inquiry-button').forEach(button => {
     event.stopPropagation();
   });
 });
-const lightboxImages = document.querySelectorAll('.lightbox-img');
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".lightbox-img");
 
-const overlay = document.createElement('div');
-overlay.className = 'lightbox-overlay lightbox-hidden';
+  images.forEach(function (img) {
+    img.style.cursor = "zoom-in";
 
-const largeImage = document.createElement('img');
+    img.addEventListener("click", function () {
+      const overlay = document.createElement("div");
+      overlay.className = "simple-lightbox";
 
-overlay.appendChild(largeImage);
-document.body.appendChild(overlay);
+      overlay.innerHTML = `
+        <span class="simple-lightbox-close">&times;</span>
+        <img src="${img.src}" alt="${img.alt}">
+      `;
 
-lightboxImages.forEach(img => {
-    img.addEventListener('click', () => {
-        largeImage.src = img.src;
-        overlay.classList.remove('lightbox-hidden');
+      document.body.appendChild(overlay);
+
+      overlay.addEventListener("click", function () {
+        overlay.remove();
+      });
     });
+  });
 });
-
-overlay.addEventListener('click', () => {
-    overlay.classList.add('lightbox-hidden');
-});
+  
